@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Stegano</string>
+    <string name="register"><u>Register here</u></string>
+    <string name="password"><u>Reset password</u></string>
+    <string name="online_gal"><u>Or search for an online photo</u></string>
+    <string name="title_activity_maps">Map</string>
+</resources>

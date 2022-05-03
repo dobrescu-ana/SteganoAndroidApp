@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/welcome_background">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/encoded"
+        android:layout_marginTop="50dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#80E3E0E1"
+        android:padding="1dp"
+        android:layout_centerInParent="true" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/choose_image_button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="#900C3F"
+        android:layout_below="@+id/encoded"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/choose_image_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Choose image"
+                android:textColor="#EAD7D4"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/choose_image_button"
+        android:layout_marginTop="70dp"
+        android:text="Secret key"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/secret_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignStart="@+id/message"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="-10dp"
+        android:ems="10"
+        android:hint="Enter secret key"
+        android:inputType="textPassword"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/hidden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secret_key"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/encode_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="170dp"
+        app:cardBackgroundColor="#900C3F"
+        android:layout_below="@+id/secret_key"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="157dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/decode_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Decode"
+                android:textColor="#EAD7D4"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/whether_encoded"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="689dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
